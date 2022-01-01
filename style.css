@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("download.bin");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+}
+
+.object{
+  color: whitesmoke;
+  background-color: rgb(31, 37, 44);
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 35px;
+  font-family: sans-serif;
+}
+.object button{
+  background-color: ghostwhite;
+  padding: 15px;
+  width: 90%;
+  display: block;
+  outline: none;
+  border: 2px solid ghostwhite;
+  border-radius: 50px;
+  margin: 15px auto;
+  font-family: sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+.object button:hover{
+  background: none;
+  color: ghostwhite;
+}
+
+.object p{
+  margin: 30px auto;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: rgb(26, 32, 39);
+  border: 1px solid rgb(31, 37, 44);
+  transition: 0.7s;
+  width: 80%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  letter-spacing: 0;
+  display: inline-block;
+}
+.object p:hover{
+  border-color: ghostwhite;
+}
+.object mark{
+  background: none;
+  color: blue;
+  font-family: bold;
+  font-family: sans-serif;
+  transition: 0.5s;
+}
+.object mark:active{
+  opacity: 0;
+}
+ul{
+  width: 95%;
+  margin: auto;
+  margin-top: 15px;
+  max-height: 25vh;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+ul>li{
+  padding: 10px;
+  list-style: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+ul>li:nth-child(odd){
+  background-color: rgb(22, 28, 35);
+}
+ul>li:active{
+  border-left: 1px solid ghostwhite;
+  border-right: 1px solid ghostwhite;
+}
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
+
+@media(min-width: 800px){
+  .object{
+    width: 30%;
+    margin: auto;
+    margin-top: 15%;
+  }
+}
